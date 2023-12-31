@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/vue-query": "^5.15.5",
     "axios": "^1.6.3",
     "vue": "^3.3.11"
   },
