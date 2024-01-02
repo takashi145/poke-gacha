@@ -93,7 +93,7 @@ onMounted(() => {
     } finally {
       isLoading.value = false;
     }
-  }, 3000);
+  }, 2000);
 });
 </script>
 <template>
