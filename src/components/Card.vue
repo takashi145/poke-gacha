@@ -17,7 +17,7 @@ const ringColor = computed(() => {
 
 <template>
   <div 
-    class="col-span-6 md:col-span-2 w-40 bg-white cursor-pointer relative flex justify-center items-center mx-auto flex-col h-52"
+    class="col-span-6 md:col-span-2 w-40 cursor-pointer relative flex justify-center items-center mx-auto flex-col h-52"
     :class="[
       ringColor, 
       isFlipped ? 'transition-all scale-x-100 ring-2 shadow-xl' : '-scale-x-100 bg-gray-500 border-2 shadow'
