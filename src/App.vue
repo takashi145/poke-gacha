@@ -38,7 +38,7 @@ const getFlavorText = flavor_text_entries => {
     : flavor_text_entries.length >= 1 ? flavor_text_entries[0].flavor_text : null;
 }
 
-// 指定されたgachaCountの数だけランダムなポケモンを取得
+// gachaCountの数だけランダムなポケモンを取得
 const drawGacha = async (gachaCount = 1) => {
   if (!pokemonData) return;
 
@@ -53,7 +53,7 @@ const drawGacha = async (gachaCount = 1) => {
   } catch (error) {
     alert('エラーが発生しました。');
   } finally {
-    setTimeout(() => isLoading.value = false, 2000);
+    setTimeout(() => isLoading.value = false, 500);
   }
 }
 
@@ -93,7 +93,7 @@ onMounted(() => {
     } finally {
       isLoading.value = false;
     }
-  }, 2000);
+  }, 1000);
 });
 </script>
 <template>
