@@ -53,7 +53,7 @@ const drawGacha = async (gachaCount = 1) => {
   } catch (error) {
     alert('エラーが発生しました。');
   } finally {
-    setTimeout(() => isLoading.value = false, 500);
+    isLoading.value = false;
   }
 }
 
